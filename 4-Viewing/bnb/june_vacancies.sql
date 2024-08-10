@@ -13,6 +13,4 @@ WHERE
 	AND a.date >= '2023-06-01'
 	AND a.date < '2023-07-01'
 GROUP BY
-	l.id,
-	l.property_type,
-	l.host_name;
+	l.id;

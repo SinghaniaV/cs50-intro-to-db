@@ -9,9 +9,7 @@ FROM
 	listings l
 	INNER JOIN reviews r ON l.id = r.listing_id
 GROUP BY
-	l.id,
-	l.property_type,
-	l.host_name
+	l.id
 ORDER BY
 	COUNT(r.id) DESC,
 	l.property_type ASC,
